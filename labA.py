@@ -6,41 +6,45 @@
 #ADD TO TEST PLAN
 
 def findNumbers ():
-    numbers = []
-    # numbers.sort()
-    count = int
-    minValue = int
-    continueLoop = bool
+    
+    numbers = [];
+    listNum = int(input("Enter the number of elements in a list: \n"))
 
-    count = input("Enter the number of elements in an array:\n")
+    for i in range(1, listNum + 1):
+        ele = int(input(f"Enter {listNum} numbers: "))
+        numbers.append(ele)
+        # ele = x;
 
-    print(f"Enter {count} numbers: \n")
+    result = 0;
+    for ele in numbers:
+        if(ele == x):
+            result = result + 1
+
+# def countX(lst, x): 
+#     count = 0
+#     for ele in lst: 
+#         if (ele == x): 
+#             count = count + 1
+#     return count 
+  
+# # Driver Code 
+# lst = [8, 6, 8, 10, 8, 20, 10, 8, 8] 
+# x = 8
+# print('{} has occurred {} times'.format(x, countX(lst, x))) 
+
+    print("The smallest number is:", min(numbers) + "It occurs {result} times")
 
     
-    # for i in range(len(numbers)):
-    #         print(numbers[i])
-    
-    # minValue = numbers[0]
-    # result = 0;
+print(findNumbers())
 
-    # for i in range(len(numbers)):
-    #     if numbers[i] < minValue:
-    #         minValue = numbers[i];
-    #         result = 1;
-    #     elif minValue == numbers[i]:
-    #         result += 1
-    
-    # print(f"The smallest number is: {minValue}. It occurs {result} times")
+repeatExec = True;
 
-    return 0;
-
-findNumbers()
-
-    # repeatExec = int;
+while repeatExec:
+    count = input ("Enter 1 to continue or 0 to quit \n")
+    print(findNumbers())
+    if(count == "0"):
+        repeatExec = False;
+        break
 
 
-    #do findNumbers()
-    #print("Enter 1 to continue or 0 to quit:")
-    # val input Enter 1 to continue or 0 to quit
-    #print (val)
-    # while repeatExec = 1
+
