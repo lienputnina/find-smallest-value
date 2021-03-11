@@ -2,39 +2,39 @@
 # A4. Given n integers. Calculate the minimum value of given integers and the number of the integers with this value.
 # Program created at: 2021/03/01
 
-#VALIDATION
-#ADD TO TEST PLAN
+# VALIDATION
 
-def findNumbers ():
-    
-    numbers = [];
-    listNum = int(input("Enter the number of elements in a list: \n"))
+# A function with the instructions for the program is declared
+def findNumbers():
+    numbers = []
+    # User enters the volume of a list by writing an integer.
+    listNums = int(input("Enter the number of elements in a list: \n"))
 
-    for i in range(1, listNum + 1):
-        ele = int(input(f"Enter {listNum} numbers: "))
-        numbers.append(ele)
-        # ele = x;
+    # A loop goes through the list of numbers the user has entered and prints them all out.
+    for i in range(1, listNums + 1):
+        allNums = int(input(f"Enter {listNums} numbers: "))
+        numbers.append(allNums)
 
-    result = 0;
+    # A loop that:
+    # 1.Finds the smallest integer in the list and prints it out,
+    # 2. Finds the number of times this integer occurs in the array and prints out their value.
+    result = 0
     for ele in numbers:
-        if(ele == x):
+        if ele == min(numbers):
             result = result + 1
 
-# https://www.geeksforgeeks.org/python-count-occurrences-element-list/
+    print("The smallest number is:", min(numbers), ("It occurs {result} times"))
 
-    print("The smallest number is:", min(numbers) + "It occurs {result} times")
 
-    
-print(findNumbers())
+# Definition of the repeatable value - it will be checked at the end of each execution cycle
+repeatExec = True
 
-repeatExec = True;
-
+# Execution of the program
 while repeatExec:
-    count = int(input ("Enter 1 to continue or 0 to quit \n"))
     print(findNumbers())
-    if(count == "0"):
-        repeatExec = False;
+    count = int(input("Enter 1 to continue or 0 to quit \n"))
+    if count == 0:
+        repeatExec = False
         break
-
-
-
+    else:
+        repeatExec = True
