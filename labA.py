@@ -30,7 +30,7 @@ print(findNumbers())
 repeatExec = True;
 
 while repeatExec:
-    count = input ("Enter 1 to continue or 0 to quit \n")
+    count = int(input ("Enter 1 to continue or 0 to quit \n"))
     print(findNumbers())
     if(count == "0"):
         repeatExec = False;
