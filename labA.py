@@ -2,8 +2,6 @@
 # A4. Given n integers. Calculate the minimum value of given integers and the number of the integers with this value.
 # Program created at: 2021/03/01
 
-# VALIDATION
-
 # A function with the instructions for the program is declared
 def findNumbers():
     numbers = []
